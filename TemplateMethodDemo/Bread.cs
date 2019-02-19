@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TemplateMethodDemo
 {
-    public class Bread
+    public abstract class Bread
     {
         public void Make()
         {
@@ -15,5 +15,12 @@ namespace TemplateMethodDemo
             var sliced = Slice(bread);
 
         }
+
+        public abstract IEnumerable<Ingredient> GatherIngredients();
+
+
+        
+            
+        
     }
 }
