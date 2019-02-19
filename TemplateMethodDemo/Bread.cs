@@ -8,6 +8,7 @@ namespace TemplateMethodDemo
     {
         public void Make()
         {
+            Console.WriteLine($"Making a {GetType().Name}");
             var ingredients = GatherIngredients();
             var dough = MixIngredients(ingredients);
             var readyDough = Rest(dough);
@@ -26,7 +27,7 @@ namespace TemplateMethodDemo
 
         public abstract string Slice(string bread);
 
-         
+        Console.WriteLine(sliced);
             
         
     }

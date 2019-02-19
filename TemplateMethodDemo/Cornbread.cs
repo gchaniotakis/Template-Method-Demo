@@ -6,29 +6,38 @@ namespace TemplateMethodDemo
 {
     class Cornbread : Bread
     {
+        private IEnumerable<Ingredient> _ingredients;
         public override string Bake(string dough)
         {
-            throw new NotImplementedException();
+            return $"{dough} is bakng at 180 degrees for 30' "
+  
         }
 
         public override IEnumerable<Ingredient> GatherIngredients()
         {
-            throw new NotImplementedException();
+            return new[]
+  {
+                new Ingredient("Corn flour"),
+                new Ingredient("Yeast"),
+                new Ingredient ("Salt"),
+                return _ingredients;
+
+            }
         }
 
         public override string MixIngredients(IEnumerable<Ingredient> ingredients)
         {
-            throw new NotImplementedException();
+            return $"({string.Join(",", _ingredients)})"; 
         }
 
         public override string Rest(string dough)
         {
-            throw new NotImplementedException();
+            return $"{dough} is resting for 5'";
         }
 
         public override string Slice(string bread)
         {
-            throw new NotImplementedException();
+            return $"{bread} is Sliced at 1 cm.";
         }
     }
 }
