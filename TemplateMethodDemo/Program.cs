@@ -6,7 +6,8 @@ namespace TemplateMethodDemo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cornbread = new Cornbread();
+            cornbread.Make();
         }
     }
 }
