@@ -18,8 +18,15 @@ namespace TemplateMethodDemo
 
         public abstract IEnumerable<Ingredient> GatherIngredients();
 
+        public abstract string MixIngredients(IEnumerable<Ingredient> ingredients);
 
-        
+        public abstract string Rest(string dough);
+
+        public abstract string Bake(string dough);
+
+        public abstract string Slice(string bread);
+
+         
             
         
     }
